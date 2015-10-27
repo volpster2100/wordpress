@@ -11,3 +11,33 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  volpi-child
 */
+
+header#masthead {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    color: #fafafa;
+    text-align: center;
+    padding: 9% 20%;
+}
+
+#banner{
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height: inherit;
+}
+
+.site-branding a{
+	color: #fafafa;
+}
+
+.site-title {
+    font-size: 27px;
+    font-size: 8.7rem;
+    line-height: 1.1852;
+    letter-spacing: 3px;
+}
