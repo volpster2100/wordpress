@@ -9,7 +9,7 @@
 	var $body, $window, $sidebar, adminbarOffset, top = false,
 	    bottom = false, windowWidth, windowHeight, lastWindowPos = 0,
 	    topOffset = 0, bodyHeight, sidebarHeight, resizeTimer,
-	    secondary, button, $header;
+	    secondary, button;
 
 	function initMainNavigation( container ) {
 		// Add dropdown toggle that display child menu items.
@@ -111,7 +111,6 @@
 			return;
 		}
 
-		headerHeight  = $header.height();
 		sidebarHeight = $sidebar.height();
 		windowHeight  = $window.height();
 		bodyHeight    = $body.height();
@@ -157,8 +156,7 @@
 		$body          = $( document.body );
 		$window        = $( window );
 		$sidebar       = $( '#sidebar' ).first();
-		$header        = $( 'header#masthead ').first();
-		adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() + $header.height() : 0;
+		adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
 
 		$window
 			.on( 'scroll.twentyfifteen', scroll )
